@@ -1,0 +1,49 @@
+package FirstPackage;
+
+public class FirstClass {
+
+	public static void main(String[] args ) {
+		Student S1 = new Student();
+		Student S2 = new Student();
+		
+		System.out.println(Student.printnoofstudent());
+		System.out.println(S1.print());
+		System.out.println(S2.print());
+		//System.out.println(S1.printnoofstudent());
+		//System.out.println(S1.printnoofstudent());
+	}
+		
+}
+
+package FirstPackage;
+
+public class Student {
+	int name;
+	int age;
+	static int noofstudent = 0;
+	
+	Student() {
+		noofstudent++;
+	}
+	public static int printnoofstudent() {
+		return noofstudent;
+	}
+	
+	public int print() {
+		return noofstudent;
+	}
+	
+	public int getName() {
+		return name;
+	}
+	public void setName(int name) {
+		this.name = name;
+	}
+	public int getAge() {
+		return age;
+	}
+	public void setAge(int age) {
+		this.age = age;
+	}
+	
+}
