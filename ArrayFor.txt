@@ -1,0 +1,36 @@
+package FirstPackage;
+
+import java.util.Scanner;
+
+public class FirstClass {
+
+	public static void main(String[] args ) {
+		Scanner scan= new Scanner(System.in);
+		System.out.println("Enter a value of your choice");
+		int n=scan.nextInt();
+		int[] arr={0,1,2,3,4,5,6,7,8,9};
+		//int[] arr={0};
+		int a=0, c;
+		System.out.println("Enter 1 for FOR statement or 2 for WHILE statement");
+		c= scan.nextInt();
+		switch(c)
+		{
+		case 1:
+		
+		for(int e:arr)
+		{
+		arr[a]=n*(a+1);
+		System.out.println("table value for number of ur choice "+" is "+ arr[a]);
+		a++;
+		      }break;
+	
+		case 2:
+			while(a<10)
+			{
+			arr[a]=n*(a+1);
+			a++;
+			System.out.println("table value for number of ur choice "+" is "+ arr[a]);      
+			}break;
+}
+}
+}

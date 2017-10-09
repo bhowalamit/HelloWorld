@@ -1,0 +1,71 @@
+package FirstPackage;
+
+import java.util.Scanner;
+
+public class FirstClass {
+
+	public static void main(String[] args ) {
+		
+		EmpDetails employee1 = new EmpDetails();
+		EmpDetails employee2 = new EmpDetails();
+		
+		employee1.setId(1);;
+		employee1.setName("Amit");;
+		employee1.setGender("Male");
+		employee1.setAge(33);
+		employee1.setEmail("bhowal.amit@gmail.com");
+		
+		employee2.setId(2);;
+		employee2.setName("Nupur");;
+		employee2.setGender("Female");
+		employee2.setAge(28);
+		employee2.setEmail("nupur.bhowal@gmail.com");
+		
+		System.out.println("Email for Employee " + employee1.getName() + " is " + employee1.Email);
+		System.out.println("Email for Employee " + employee2.getName() + " is " + employee2.Email);
+			
+		}
+		
+}
+
+package FirstPackage;
+
+public class EmpDetails {
+
+		int Id;
+		String Name;
+		String Gender;
+		int Age;
+		String Email;
+		public int getId() {
+			return Id;
+		}
+		public void setId(int id) {
+			Id = id;
+		}
+		public String getName() {
+			return Name;
+		}
+		public void setName(String name) {
+			Name = name;
+		}
+		public String getGender() {
+			return Gender;
+		}
+		public void setGender(String gender) {
+			Gender = gender;
+		}
+		public int getAge() {
+			return Age;
+		}
+		public void setAge(int age) {
+			Age = age;
+		}
+		public String getEmail() {
+			return Email;
+		}
+		public void setEmail(String email) {
+			Email = email;
+		}
+		
+	}

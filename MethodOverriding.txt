@@ -1,0 +1,38 @@
+package FirstPackage;
+
+public class FirstClass {
+
+	public static void main(String[] args ) {
+		
+		Bank XYZ = new ICICI();
+		
+		System.out.println(XYZ.getinterest());
+		System.out.println(XYZ.getinterest(1));
+	}
+		
+}
+
+package FirstPackage;
+
+public class Bank {
+	int getinterest(){
+		return 5;
+	}
+	
+	int getinterest(int x){
+		return 8;
+	}
+}
+
+package FirstPackage;
+
+public class ICICI extends Bank {
+	 int getinterest(){
+		return 6;
+	}
+	 
+	 int getinterest(int x){
+		 return 9;
+	 }
+
+}

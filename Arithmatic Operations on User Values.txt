@@ -1,0 +1,27 @@
+package FirstPackage;
+
+import java.util.Scanner;
+
+public class FirstClass {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		double x , y , z1,z2,z3,z4,z5;
+		Scanner Scan = new Scanner(System.in);
+		System.out.println("Enter the value for x");
+		x = Scan.nextDouble();
+		System.out.println("Enter the value for y");
+		y = Scan.nextDouble();
+		z1=x+y;
+		z2=x-y;
+		z3=x*y;
+		z4=x/y;
+		z5=x%y;
+		System.out.println("x + y = " + z1);
+		System.out.println("x - y = " + z2);
+		System.out.println("x * y = " + z3);
+		System.out.println("x / y = " + z4);
+		System.out.println("x % y = " + z5);
+	}
+
+}

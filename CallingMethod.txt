@@ -1,0 +1,65 @@
+package FirstPackage;
+
+import java.util.Scanner;
+
+public class FirstClass {
+
+	public static void main(String[] args ) {
+		double result=0;
+		Scanner scan = new Scanner(System.in);
+		System.out.println("Please input value for x :");
+		double x = scan.nextDouble();
+		System.out.println("Please input value for y :");
+		double y = scan.nextDouble();
+		//double result;
+		System.out.println("Please input one of the below mentioned options :");
+		System.out.println("1 for Add");
+		System.out.println("2 for Substract");
+		System.out.println("3 for Multiply");
+		System.out.println("4 for Divide");
+		System.out.println("5 for Remainder");
+		System.out.println("6 for Table");
+		int option = scan.nextInt();
+		switch (option){
+		case 1 : result = add(x,y);
+		break;
+		case 2 : result = substract(x,y);
+		break;
+		case 3 : result = multiply(x,y);
+		break;
+		case 4 : result = divide(x,y);
+		break;
+		case 5 : result = remainder(x,y);
+		break;
+		case 6 : //int a = (int) x;
+				 //int b = (int) y;
+			table((int) x, (int) y);
+		break;
+		default : System.out.println("No such option exists");
+		break;
+		}
+		if (option==1 || option==2 || option==3 || option==4 || option==5) {
+		System.out.println("Result is :" + result);
+		}
+}
+	public static double add(double m, double n){
+		return (m+n);
+	}
+	public static double substract(double m, double n){
+		return (m-n);
+	}
+	public static double multiply(double m, double n){
+		return (m*n);
+	}
+	public static double divide(double m, double n){
+		return (m/n);
+	}
+	public static double remainder(double m, double n){
+		return (m%n);
+	}
+	public static void table(int m, int n){
+		for (int i=1; i<=n; i++){
+			System.out.println(m + " X " + i + " = " + (m*i));
+		}
+	}
+}

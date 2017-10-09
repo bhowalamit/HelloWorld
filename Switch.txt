@@ -1,0 +1,29 @@
+package FirstPackage;
+
+import java.util.Scanner;
+
+public class FirstClass {
+
+	
+
+	public static void main(String[] args ) {
+		
+		Scanner scan=new Scanner(System.in);
+		System.out.println("Provide student's Marks :");
+		int x= scan.nextInt();
+		switch (x){
+		case 1: if(x>=40)
+		{
+			System.out.println("student passed");
+			break;
+		} 
+		else {
+			System.out.println("student failed");
+		break;
+		    }
+		default:
+			System.out.println("error");
+			break;
+		}
+	}
+}

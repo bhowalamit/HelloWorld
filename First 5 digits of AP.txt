@@ -1,0 +1,21 @@
+package FirstPackage;
+
+import java.util.Scanner;
+
+public class FirstClass {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.out.println("This will show the first 5 digits of AP");
+		
+		Scanner scan = new Scanner(System.in);
+		System.out.println("Enter Value for first term of AP");
+		int a = scan.nextInt();
+		System.out.println("Enter Value for common difference");
+		int d = scan.nextInt();
+		System.out.println("The first 10 digits of this AP is : ");
+		System.out.println(a + " " + (a+d) + " " + (a+2*d) + " " + (a+3*d) + " " + (a+4*d));
+		
+	}
+
+}

@@ -1,0 +1,25 @@
+package FirstPackage;
+
+import java.util.Scanner;
+
+public class FirstClass {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner scan = new Scanner(System.in);
+		System.out.println("Ënter value for X");
+		int x = scan.nextInt();
+		System.out.println("Ënter value for Y");
+		int y = scan.nextInt();
+		System.out.println("Ënter value for Z");
+		int z = scan.nextInt();
+		System.out.println("Hello" + ++x);
+		if (x >=9 && z++ !=2) {
+			System.out.println("Nupur" + x++);
+		} else {
+			System.out.println("Amit" + y++);
+			System.out.println("Bhowal" + ++z);
+		}//x+=5
+	}
+
+}

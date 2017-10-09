@@ -1,0 +1,35 @@
+package FirstPackage;
+
+public class FirstClass {
+
+	public static void main(String[] args ) {
+		Cube C1 = new Cube();
+		Cube C2 = new Cube(10,10,10);
+		System.out.println(C1.volume());
+		System.out.println(C2.volume());
+	}
+		
+}
+
+package FirstPackage;
+
+public class Cube {
+	int l;
+	int b;
+	int h;
+	
+	public int volume(){
+		return (l*b*h);
+	}
+	
+	Cube(){
+		l=10;
+		b=20;
+		h=30;
+	}
+	Cube(int m, int n, int o){
+		l=m;
+		b=n;
+		h=o;
+	}
+}
