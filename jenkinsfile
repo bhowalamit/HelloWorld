@@ -1,6 +1,7 @@
 #!/usr/bin/env groovy
 pipeline {
-    agent "windows"
+    agent {windows
+    }
 
     stages {
         stage('Build') {
